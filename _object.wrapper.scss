@@ -1,0 +1,58 @@
+// =============================================================================
+//
+// Name:          Wrapper
+//
+// Description:   Content wrapper
+//
+// Block:         `o-wrapper`
+//
+// Markup:
+//
+// <div class="o-wrapper">...</div>
+//
+// =============================================================================
+
+
+
+
+
+// Variables
+// =============================================================================
+
+// Predefine the variables below in order to alter and enable specific features.
+
+$tree-wrapper-namespace:             $tree-namespace !default;
+
+$tree-wrapper-width:                 1280px !default;
+
+$tree-wrapper-gutter:                $tree-base-spacing-unit !default;
+$tree-wrapper-gutter--small:         halve($tree-wrapper-gutter) !default;
+
+$tree-enable-wrapper--responsive:    false !default;
+$tree-wrapper-collapse-at:           720px !default;
+
+
+
+
+
+// =============================================================================
+// Block: `o-wrapper`
+// =============================================================================
+
+.#{$tree-wrapper-namespace}o-wrapper {
+    max-width: $tree-wrapper-width;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $tree-wrapper-gutter;
+    padding-left: $tree-wrapper-gutter;
+
+    @if ($tree-enable-wrapper--responsive == true) {
+
+        @media screen and (max-width: $tree-wrapper-collapse-at) {
+            padding-right: $tree-wrapper-guttter--small;
+            padding-left: $tree-wrapper-gutter--small;
+        }
+
+    }
+
+}
