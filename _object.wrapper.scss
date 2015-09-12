@@ -49,7 +49,7 @@ $tree-wrapper-collapse-at:           720px !default;
     @if ($tree-enable-wrapper--responsive == true) {
 
         @media screen and (max-width: $tree-wrapper-collapse-at) {
-            padding-right: $tree-wrapper-guttter--small;
+            padding-right: $tree-wrapper-gutter--small;
             padding-left: $tree-wrapper-gutter--small;
         }
 
