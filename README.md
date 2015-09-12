@@ -1,6 +1,6 @@
 # Wrapper
 
-The `wrapper` object will wrap its content up to the defined width..
+The `wrapper` object will wrap its content up to the defined width.
 
 ## Dependencies
 
