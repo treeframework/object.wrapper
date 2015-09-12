@@ -1,0 +1,16 @@
+{
+  "name": "tree-wrapper",
+  "homepage": "https://github.com/treeframework/object.wrapper",
+  "authors": "Ilia Kolev <info@iliakolev.com>",
+  "description": "The wrapper object will wrap its content up to the defined width.",
+  "main": "_object.wrapper.scss",
+  "keywords": [
+    "oocss",
+    "css"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "tree-defaults": "~0.2.5",
+    "tree-functions": "~0.2.5"
+  }
+}
